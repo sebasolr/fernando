@@ -14,12 +14,24 @@ function add(){
     
 }
 // creamos un evento, al momento de hacer click se activa la siguiente funcion
-button.addEventListener('click', function(){
-    //si el contenido del boton es igual a agrega borde se aplica la funcion add(agregar el borde), si no se cumple esa condicion se salta al else
-    if(button.textContent === 'Agrega borde'){
+//button.addEventListener('click', function(){
+//si el contenido del boton es igual a agrega borde se aplica la funcion add(agregar el borde), si no se cumple esa condicion se salta al else
+ //   if(button.textContent === 'Agrega borde'){
+ //       add()
+        //si no se cumple la primera quitara el borde.
+ //   }else{
+ //       remove()
+//    }
+//})
+
+
+//esto hace lo mismo que el evento
+document.getElementById('button').onclick = function MyFuncion () {
+     //si el contenido del boton es igual a agrega borde se aplica la funcion add(agregar el borde), si no se cumple esa condicion se salta al else
+     if(button.textContent === 'Agrega borde'){
         add()
         //si no se cumple la primera quitara el borde.
     }else{
         remove()
     }
-})
+    }
